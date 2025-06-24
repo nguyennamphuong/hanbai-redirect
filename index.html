@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect Hanbai App</title>
+  <script>
+    if (/android/i.test(navigator.userAgent)) {
+      window.location.href = "https://play.google.com/store/apps/details?id=com.sorimachi.hanbaivn";
+    } else if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
+      window.location.href = "https://apps.apple.com/vn/app/hanbai/id6745807766";
+    } else {
+      window.location.href = "https://hanbai.vn";
+    }
+  </script>
+</head>
+<body>
+  <p>Đang chuyển hướng đến ứng dụng Hanbai...</p>
+</body>
+</html>
